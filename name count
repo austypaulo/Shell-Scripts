@@ -1,0 +1,4 @@
+TO="sebastianbrittoa@gmail.com"
+count=$(ps -ef | grep "moderator" mychannel |wc|awk '{print $1}')
+echo "number of times a name is coming in a file : $count"
+echo "Subject:number of times a name is coming in a file : $count"|sendmail $TO
