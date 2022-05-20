@@ -1,0 +1,10 @@
+#! /bin/bash
+TO="9566569265a@gmail.com","princevermadevops@gmail.com"
+hostname =$(hostname)
+IP_address=$(ifconfig)
+list_of_running_process=$(sudo ps -aux)
+disk_utilisation=$(df -T)
+java_version=$(java -version)
+OS_version=$(cat /etc/os-release)
+echo "sending mail for the requirements"
+echo "hostname =$(hostname -I)","IP_address=$(ifconfig)", "list_of_running_process=$(sudo ps -aux)","disk_utilisation=$(df -T)","java_version=$(java -version)","OS_version=$(cat /etc/os-release)"|sendmail $TO
