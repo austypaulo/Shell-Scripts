@@ -1,5 +1,5 @@
 #!/bin/bash
-TO="9566569265a@gmail.com,princevermadevops@gmail.com,austycool100893@gmail.com"
+TO="9566569265a@gmail.com"
 HOSTNAME=$(hostname)
 DATE=$(date "+%Y-%m-%d %H:%M:%S")
 CPUSAGE=$(top -b -n 1 d1 | grep "Cpu(s)" | awk '{ print $2 }')
